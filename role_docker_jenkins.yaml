@@ -1,0 +1,6 @@
+---
+- name: Install Docker and Jenkins
+  hosts: localhost
+  become: true
+  roles:
+    - iam-surya369.java-jenkins-docker

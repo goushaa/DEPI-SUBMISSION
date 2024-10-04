@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dns-resolver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dns-resolver
+  template:
+    metadata:
+      labels:
+        app: dns-resolver
+    spec:
+      containers:
+      - name: dns-resolver
+        image: 522814709442.dkr.ecr.us-east-1.amazonaws.com/kady-docker-repo:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DNS_RESOLVE_INTERVAL_SECONDS
+          value: "5"
+      imagePullSecrets:
+      - name: ecr-secret    
