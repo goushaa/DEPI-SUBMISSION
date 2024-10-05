@@ -1,6 +1,10 @@
 # DEPI Project Overview
 
-Welcome to the DEPI project! This repository provides a high-level overview of the project's different components. To understand the details and dive deeper into each part, please refer to the individual repositories listed below.
+Welcome to the DEPI project! This repository provides a high-level overview of the project's different components. 
+
+![AWS Infrastructure Diagram](Project%20Architecture.png)
+
+To understand the details and dive deeper into each part, please refer to the individual repositories listed below.
 
 ## Repositories
 
